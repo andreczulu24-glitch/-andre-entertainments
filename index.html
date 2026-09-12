@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,21 +10,22 @@
 <meta name="description" content="Andre Entertainments provides tents, mobile toilets, sound systems, chairs, tables and event equipment hire in Lusaka, Zambia.">
 
 <style>
+
 *{
 box-sizing:border-box;
 margin:0;
-padding:0
+padding:0;
 }
 
 html{
-scroll-behavior:smooth
+scroll-behavior:smooth;
 }
 
 body{
 font-family:Arial,Helvetica,sans-serif;
 background:#0a0a0a;
 color:#fff;
-line-height:1.6
+line-height:1.6;
 }
 
 /* NAVIGATION */
@@ -38,23 +40,23 @@ justify-content:space-between;
 align-items:center;
 background:#0a0a0af2;
 backdrop-filter:blur(10px);
-border-bottom:1px solid #242424
+border-bottom:1px solid #242424;
 }
 
 nav strong{
 font-size:19px;
-letter-spacing:1px
+letter-spacing:1px;
 }
 
 nav a{
 color:#fff;
 text-decoration:none;
 margin-left:20px;
-font-size:14px
+font-size:14px;
 }
 
 nav a:hover{
-color:#bbb
+color:#bbb;
 }
 
 /* HERO */
@@ -70,8 +72,9 @@ padding:90px 7%;
 background:
 linear-gradient(#000b,#000b),
 url("https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1600&q=80")
-center/cover
+center/cover;
 }
+
 .hero-logo{
 width:220px;
 max-width:70%;
@@ -79,25 +82,33 @@ height:auto;
 margin-bottom:28px;
 filter:drop-shadow(0 8px 25px #000);
 }
+
 .hero span{
 font-size:14px;
 letter-spacing:3px;
 text-transform:uppercase;
 color:#ccc;
-margin-bottom:15px
+margin-bottom:15px;
 }
 
 .hero h1{
 font-size:52px;
 line-height:1.1;
 max-width:850px;
-margin-bottom:22px
+margin-bottom:22px;
 }
 
 .hero p{
 max-width:680px;
 color:#ddd;
-font-size:18px
+font-size:18px;
+}
+
+.hero-buttons{
+display:flex;
+gap:12px;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 .btn{
@@ -109,31 +120,37 @@ color:#000;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
-transition:.2s
+transition:.2s;
 }
 
 .btn:hover{
 transform:translateY(-2px);
-background:#ddd
+background:#ddd;
+}
+
+.call-btn{
+background:transparent;
+color:#fff;
+border:1px solid #fff;
 }
 
 /* SECTIONS */
 
 section{
-padding:80px 7%
+padding:80px 7%;
 }
 
 .section-intro{
 text-align:center;
 max-width:650px;
 margin:-20px auto 40px;
-color:#aaa
+color:#aaa;
 }
 
 h2{
 text-align:center;
 font-size:34px;
-margin-bottom:40px
+margin-bottom:40px;
 }
 
 /* CARDS */
@@ -143,7 +160,7 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 max-width:1100px;
-margin:auto
+margin:auto;
 }
 
 .card{
@@ -151,43 +168,66 @@ background:#151515;
 border:1px solid #292929;
 border-radius:14px;
 padding:30px;
-transition:.2s
+transition:.2s;
 }
 
 .card:hover{
 transform:translateY(-4px);
-border-color:#444
+border-color:#444;
 }
 
 .card .icon{
 font-size:32px;
-margin-bottom:15px
+margin-bottom:15px;
 }
 
 .card h3{
 font-size:19px;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 .card p{
 color:#aaa;
-font-size:15px
+font-size:15px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:18px;
+max-width:1100px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:14px;
+border:1px solid #292929;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
 }
 
 /* WHY US */
 
 .why{
-background:#111
+background:#111;
 }
 
 .why .card{
-background:#181818
+background:#181818;
 }
 
 /* EVENTS */
 
 .events{
-text-align:center
+text-align:center;
 }
 
 /* CTA */
@@ -197,113 +237,42 @@ text-align:center;
 background:
 linear-gradient(#000c,#000c),
 url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80")
-center/cover
+center/cover;
 }
 
 .cta h2{
-margin-bottom:15px
+margin-bottom:15px;
 }
 
 .cta p{
 color:#ddd;
 max-width:650px;
-margin:auto
+margin:auto;
 }
 
 /* CONTACT */
 
 .contact{
 text-align:center;
-background:#151515
+background:#151515;
 }
 
 .contact-info{
 max-width:600px;
-margin:auto
+margin:auto;
 }
 
 .contact-info p{
 margin:12px;
-color:#ccc
+color:#ccc;
 }
 
 .contact-info strong{
-color:#fff
+color:#fff;
 }
 
-/* FOOTER */
+/* FLOATING CONTACT BUTTONS */
 
-footer{
-text-align:center;
-padding:28px;
-color:#777;
-border-top:1px solid #222;
-font-size:14px
-}
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-nav{
-padding:16px 5%;
-flex-direction:column;
-gap:12px
-}
-
-nav strong{
-font-size:17px
-}
-
-nav a{
-margin:0 7px;
-font-size:13px
-}
-
-.hero{
-min-height:78vh;
-padding:70px 6%
-}
-
-.hero h1{
-font-size:37px
-}
-
-.hero p{
-font-size:16px
-}
-
-section{
-padding:65px 6%
-}
-
-h2{
-font-size:29px
-}
-
-.grid{
-grid-template-columns:1fr
-}
-
-}
-</style>
-</head>
-<!-- FLOATING CONTACT BUTTONS -->
-
-<div class="floating-buttons">
-
-<a class="whatsapp-float"
-href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I'd%20like%20to%20request%20a%20quote."
-target="_blank">
-💬 WhatsApp
-</a>
-
-<a class="call-float"
-href="tel:+260977796924">
-📞 Call Us
-</a>
-
-</div>
 .floating-buttons{
 position:fixed;
 right:20px;
@@ -336,6 +305,80 @@ color:#000;
 .floating-buttons a:hover{
 transform:translateY(-2px);
 }
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:28px;
+color:#777;
+border-top:1px solid #222;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+nav{
+padding:16px 5%;
+flex-direction:column;
+gap:12px;
+}
+
+nav strong{
+font-size:17px;
+}
+
+nav a{
+margin:0 7px;
+font-size:13px;
+}
+
+.hero{
+min-height:78vh;
+padding:70px 6%;
+}
+
+.hero-logo{
+width:180px;
+}
+
+.hero h1{
+font-size:37px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:65px 6%;
+}
+
+h2{
+font-size:29px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.floating-buttons{
+right:12px;
+bottom:12px;
+}
+
+}
+
+</style>
+
+</head>
+
 <body>
 
 <!-- NAVIGATION -->
@@ -347,6 +390,7 @@ transform:translateY(-2px);
 <div>
 <a href="#services">Services</a>
 <a href="#events">Events</a>
+<a href="#gallery">Gallery</a>
 <a href="#why">Why Us</a>
 <a href="#contact">Contact</a>
 </div>
@@ -370,10 +414,20 @@ From tents and mobile toilets to sound systems, chairs and tables,
 we help you create events that people remember.
 </p>
 
+<div class="hero-buttons">
+
 <a class="btn"
-href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I%27d%20like%20to%20request%20a%20quote.">
-Get a Quote on WhatsApp
+href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I'd%20like%20to%20request%20a%20quote."
+target="_blank">
+💬 WhatsApp Us
 </a>
+
+<a class="btn call-btn"
+href="tel:+260977796924">
+📞 Call 0977 796 924
+</a>
+
+</div>
 
 </section>
 
@@ -497,6 +551,35 @@ we provide equipment for a wide range of events.
 </section>
 
 
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Our Work</h2>
+
+<p class="section-intro">
+A look at some of our equipment and event setups.
+</p>
+
+<div class="gallery">
+
+<img src="marquee-1.jpeg" alt="Andre Entertainments marquee setup">
+
+<img src="marquee-2.jpeg" alt="Andre Entertainments event tent">
+
+<img src="vip-toilets.jpeg" alt="Andre Entertainments VIP mobile toilets">
+
+<img src="toilets-1.jpeg" alt="Andre Entertainments mobile toilets">
+
+<img src="toilets-2.jpeg" alt="Andre Entertainments portable toilets">
+
+<img src="tent-1.jpeg" alt="Andre Entertainments tent setup">
+
+</div>
+
+</section>
+
+
 <!-- WHY CHOOSE US -->
 
 <section id="why" class="why">
@@ -558,8 +641,9 @@ equipment for your event.
 </p>
 
 <a class="btn"
-href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I%27d%20like%20to%20request%20a%20quote.">
-Request a Quote
+href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I'd%20like%20to%20request%20a%20quote."
+target="_blank">
+💬 Request a Quote
 </a>
 
 </section>
@@ -575,17 +659,63 @@ Request a Quote
 
 <p>📍 <strong>Location:</strong> Woodlands, Lusaka</p>
 
-<p>📞 <strong>Call / WhatsApp:</strong> 0977 796 924</p>
+<p>
+📞 <strong>Call / WhatsApp:</strong>
+<a href="tel:+260977796924" style="color:#fff;">
+0977 796 924
+</a>
+</p>
 
-<p>📞 <strong>Alternative:</strong> 0955 796 924</p>
+<p>
+📞 <strong>Alternative:</strong>
+<a href="tel:+260955796924" style="color:#fff;">
+0955 796 924
+</a>
+</p>
 
-<p>📧 <strong>Email:</strong> andreentertainments@gmail.com</p>
+<p>
+📧 <strong>Email:</strong>
+<a href="mailto:andreentertainments@gmail.com" style="color:#fff;">
+andreentertainments@gmail.com
+</a>
+</p>
 
 <a class="btn"
-href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I%27d%20like%20to%20request%20a%20quote.">
-WhatsApp Us
+href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I'd%20like%20to%20request%20a%20quote."
+target="_blank">
+💬 WhatsApp Us
 </a>
 
 </div>
 
-</section
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Andre Entertainments. All rights reserved.
+
+</footer>
+
+
+<!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating-buttons">
+
+<a class="whatsapp-float"
+href="https://wa.me/260977796924?text=Hi%20Andre%20Entertainments%2C%20I'd%20like%20to%20request%20a%20quote."
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="call-float"
+href="tel:+260977796924">
+📞 Call Us
+</a>
+
+</div>
+
+</body>
+</html>
